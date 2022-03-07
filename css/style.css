@@ -27,7 +27,11 @@ body {
   display: flex;
   /* flex-flow: row nowrap; default */
 }
-
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* navbar top */
 
 .nav-top {
@@ -51,9 +55,15 @@ body {
 }
 #upgrade > button {
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   border: 1px solid rgb(180, 180, 182);
+  transition: transform 0.2s;
+  cursor: pointer;
 }
+#upgrade > button:hover {
+  transform: scale(1.1);
+}
+
 /* main */
 main {
   width: calc(100% - 230px);
@@ -91,23 +101,67 @@ main {
   margin: 0 auto;
   display: none;
 }
-.main-menu > ul > li > a:hover .layhover-border {
+.main-menu > ul > li > a:active .layhover-border {
   display: block;
 }
-main section {
-  margin: 20px;
+.main-menu > ul > li > a:hover {
+  color: white;
 }
-
-/* recently played */
-
+main section {
+  padding: 0 20px;
+  margin: 3vw 0;
+  width: 100%;
+}
 .media {
-  height: 250px;
   width: 15%;
   float: left;
-  margin: 20px 2% 20px 0;
+  margin-right: 2%; /* sono 5 margini interni che devono coprire il 10% della larghezza totale lasciata dalle cards */
+  margin-top: 1vw;
+  text-align: center;
 }
 .media:last-child {
-  margin-right: 0;
+  margin-right: 0; /* altrimenti i margin-right sarebbero stati 6 e avrei superato il 10% di width da colmare */
+}
+.media-img {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.media-img > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: white;
+  font-size: 48px;
+  display: none;
+}
+.media-img:hover i {
+  display: block;
+  z-index: 10000;
+}
+.media-img:hover img {
+  opacity: 0.4;
+}
+.media-img img {
+  width: 100%;
+  object-fit: contain;
+}
+.media-title {
+  margin-top: 1vw;
+}
+.media-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(116, 119, 123);
+  margin-top: 1vw;
+}
+.media h4 {
+  font-size: 14px;
+}
+#popular-artist img {
+  border-radius: 50%;
 }
 
 aside {

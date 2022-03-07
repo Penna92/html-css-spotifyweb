@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Spotify</title>
 </head>
@@ -25,6 +28,7 @@
                     </div>
                 </nav>
                 <div class="main-content">
+                    <!-- sezione menu di navigazione main -->
                     <div class="main-menu">
                         <ul>
                             <li>
@@ -59,83 +63,154 @@
                             </li>
                         </ul>
                     </div>
-                    <section class="recently-played">
+                    <!-- /sezione menu di navigazione main -->
+
+                    <!-- prima sezione main (Ascoltati di recente) -->
+                    <section id="recently-played" class="clearfix">
                         <h1>Recently Played</h1>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/metal_lifting.jpg" alt="Album Heavy Metal">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>Heavy Metal</h4>
                                 </div>
                                 <div class="media-subtitle">
-
+                                    Subtitle
                                 </div>
                             </div>
                         </div>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/stranger.jpeg" alt="Album Stranger Things">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>Stranger Things, Vol.1 (a Netflix Original Soundtrack)</h4>
                                 </div>
                                 <div class="media-subtitle">
-
+                                    Kyle Dixon & Michael Stein
                                 </div>
                             </div>
                         </div>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/aquietplace.jpeg" alt="Album A Quite Place">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>A quiet place</h4>
                                 </div>
                                 <div class="media-subtitle">
-
+                                    Subtitle
                                 </div>
                             </div>
                         </div>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/split.jpeg" alt="Album Split">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>Split</h4>
                                 </div>
                                 <div class="media-subtitle">
-
+                                    Subtitle
                                 </div>
                             </div>
                         </div>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/cure.jpeg" alt="Album A Cure for Wellness">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>A cure for wellness</h4>
                                 </div>
                                 <div class="media-subtitle">
-
+                                    Subtitle
                                 </div>
                             </div>
                         </div>
-                        <div class="media debug">
+                        <div class="media">
                             <div class="media-img">
-
+                                <img src="img/sinister.jpeg" alt="Album Sinister">
+                                <i class="fa-regular fa-circle-play"></i>
                             </div>
                             <div class="media-text">
                                 <div class="media-title">
-
+                                    <h4>Sinister</h4>
                                 </div>
                                 <div class="media-subtitle">
+                                    Subtitle
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /prima sezione main -->
 
+                    <!-- seconda sezione main (Creato per...) -->
+                    <section id="created-for" class="clearfix">
+                        <h1>Creato per John Doe</h1>
+                        <div class="media-subtitle">
+                            Più ascolti, più accurati saranno i suggerimenti.
+                        </div>
+                        <div class="media">
+                            <div class="media-img">
+                                <img src="img/radar.jpeg" alt="Release Radar">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="media-text">
+                                <div class="media-title">
+                                    <h4>Release Radar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-img">
+                                <img src="img/mixdaily.jpeg" alt="Album Stranger Things">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="media-text">
+                                <div class="media-title">
+                                    <h4>Daily Mix 1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /seconda sezione main -->
+
+                    <!-- terza sezione main (Artisti più popolari) -->
+                    <section id="popular-artist" class="clearfix">
+                        <h1>Artisti più popolari</h1>
+                        <div class="media-subtitle">
+                            Più ascolti, più accurati saranno i suggerimenti.
+                        </div>
+                        <div class="media">
+                            <div class="media-img">
+                                <img src="img/youg.jpeg" alt="Release Radar">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="media-text">
+                                <div class="media-title">
+                                    <h4>Lana del Rey</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-img">
+                                <img src="img/einaudi.jpeg" alt="Album Stranger Things">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="media-text">
+                                <div class="media-title">
+                                    <h4>Ludovico Einaudi</h4>
                                 </div>
                             </div>
                         </div>
