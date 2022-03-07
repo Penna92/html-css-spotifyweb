@@ -1,5 +1,4 @@
-/* general */
-
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -25,15 +24,21 @@ body {
   height: calc(100% - 90px);
   background-color: blue;
   display: flex;
-  /* flex-flow: row nowrap; default */
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(116, 119, 123);
 }
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
-/* navbar top */
 
+/* NAVBAR TOP */
 .nav-top {
   width: 100%;
   height: 70px;
@@ -64,7 +69,7 @@ body {
   transform: scale(1.1);
 }
 
-/* main */
+/* MAIN */
 main {
   width: calc(100% - 230px);
   height: 100%; /* con flex c'è stretch di default, quindi non servirebbe */
@@ -85,14 +90,6 @@ main {
   display: inline-block;
   text-transform: uppercase;
   margin: 0 0.5vw;
-}
-.main-menu > ul > li > a {
-  display: inline-block;
-  width: fit-content;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  color: rgb(116, 119, 123);
 }
 .layhover-border {
   width: 40%;
@@ -163,11 +160,121 @@ main section {
 #popular-artist img {
   border-radius: 50%;
 }
+/* ---- /MAIN ---- */
 
+/* ASIDE */
 aside {
   width: 230px;
-  background-color: red;
+  background-color: black;
+  position: relative;
 }
+.logo,
+.aside-top-menu a,
+.aside-playlist,
+.aside-profile {
+  padding: 0 20px;
+}
+#logo {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+}
+#logo img {
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.aside-top-menu {
+  width: 100%;
+  color: rgb(116, 119, 123);
+}
+.aside-top-menu img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  filter: invert(0.5);
+}
+aside span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.aside-top-menu div {
+  margin-bottom: 10px;
+}
+aside a:hover {
+  color: white;
+}
+aside a:hover img {
+  filter: invert(0);
+}
+.aside-top-menu div:active {
+  border-left: 2px solid greenyellow;
+}
+.aside-playlist {
+  margin: 30px 0 10px 0;
+  margin-bottom: 1px solid rgb(116, 119, 123);
+  display: flex;
+  flex-direction: column;
+}
+.crea-playlist {
+  margin: 20px 0 10px 0;
+}
+.crea-playlist > button {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background-color: rgb(116, 119, 123);
+  cursor: pointer;
+}
+.crea-playlist > button:hover {
+  background-color: white;
+}
+.crea-playlist > a {
+  padding-left: 5px;
+}
+.fa-plus {
+  font-size: 24px;
+}
+.aside-playlist ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.aside-playlist ul li a,
+.aside-profile a {
+  font-size: 12px;
+}
+.aside-profile {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 20px;
+}
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(180, 180, 182);
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-profile {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(180, 180, 182);
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.user-profile h5 {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 footer {
   height: 90px;
   width: 100%;
