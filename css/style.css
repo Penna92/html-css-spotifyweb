@@ -165,6 +165,7 @@ main section {
 /* ASIDE */
 aside {
   width: 230px;
+  min-height: 620px;
   background-color: black;
   position: relative;
 }
