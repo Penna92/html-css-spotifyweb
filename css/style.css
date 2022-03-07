@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ----GENERAL---- */
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +32,17 @@ a {
   font-size: 14px;
   color: rgb(116, 119, 123);
 }
+li {
+  list-style: none;
+}
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
+/* ----/GENERAL---- */
 
-/* NAVBAR TOP */
+/* ----NAVBAR TOP---- */
 .nav-top {
   width: 100%;
   height: 70px;
@@ -68,8 +72,9 @@ a {
 #upgrade > button:hover {
   transform: scale(1.1);
 }
+/* ----/NAVBAR TOP---- */
 
-/* MAIN */
+/* ----MAIN---- */
 main {
   width: calc(100% - 230px);
   height: 100%; /* con flex c'è stretch di default, quindi non servirebbe */
@@ -162,7 +167,7 @@ main section {
 }
 /* ---- /MAIN ---- */
 
-/* ASIDE */
+/* ----ASIDE---- */
 aside {
   width: 230px;
   min-height: 620px;
@@ -238,7 +243,6 @@ aside a:hover img {
   font-size: 24px;
 }
 .aside-playlist ul li {
-  list-style: none;
   margin: 10px 0;
 }
 .aside-playlist ul li a,
@@ -263,7 +267,7 @@ aside a:hover img {
 .user-profile {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid rgb(180, 180, 182);
+  border-top: 2px solid rgb(40, 40, 40);
 }
 .profile-image img {
   width: 100%;
@@ -271,16 +275,172 @@ aside a:hover img {
   object-fit: contain;
   object-position: center;
 }
-.user-profile h5 {
+.user-profile h4 {
   display: inline-block;
   margin: 0 10px;
 }
+h4 > a {
+  color: white;
+}
+/* ----/ASIDE---- */
 
+/* ----FOOTER---- */
 footer {
   height: 90px;
   width: 100%;
-  background: #282828;
+  background: rgb(40, 40, 40);
   position: fixed;
   left: 0;
   bottom: 0;
 }
+footer a:hover {
+  color: white;
+}
+.player-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.left-bar,
+.right-bar {
+  height: 100%;
+  width: 230px;
+  min-width: 230px;
+  display: flex;
+}
+.central-bar {
+  height: 100%;
+  width: calc(100% - 460px);
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.riproduzione {
+  height: 90px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.album-img {
+  margin-left: 15px;
+  height: 50px;
+  width: 50px;
+}
+.album-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.riproduzione > span {
+  font-size: 12px;
+  width: 100px;
+}
+.riproduzione > span > a {
+  font-size: 10px;
+}
+.icons {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-riproduzione-media {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-riproduzione-media > ul > li {
+  display: inline-block;
+  margin: 0 1vw;
+}
+.menu-riproduzione-media > ul > li > a {
+  color: white;
+  font-size: 18px;
+  vertical-align: middle;
+}
+#bigger-icon {
+  font-size: 36px;
+  transition: transform 0.2s;
+}
+#bigger-icon:hover {
+  transform: scale(1.1);
+}
+.barra-avanzamento-media {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar {
+  width: calc(100% - 20px);
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(90, 90, 90);
+  margin: 0 10px;
+}
+.running-bar {
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 182);
+  float: left;
+}
+.barra-avanzamento-media > a {
+  display: block;
+  width: 50%;
+}
+.start-time,
+.end-time {
+  font-size: 12px;
+  font-weight: bold;
+}
+.hidden-running-bar {
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  float: left;
+  position: relative;
+  display: none;
+}
+.progress-bar:hover .running-bar {
+  display: none;
+}
+.progress-bar:hover .hidden-running-bar {
+  display: block;
+}
+.white-circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.right-bar {
+  align-items: center;
+}
+.right-bar > a {
+  display: block;
+  width: 7vw;
+}
+.right-bar > ul > li {
+  display: inline-block;
+  margin: 0 0.5vw;
+}
+.right-bar > ul > li > a {
+  color: white;
+}
+.right-bar .progress-bar {
+  min-width: 80px;
+}
+/* ----/FOOTER---- */

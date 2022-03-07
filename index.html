@@ -1,288 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Spotify</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="wrapper-content">
-            <aside>
-                <a href="#" class="logo">
-                    <div id="logo">
-                        <img src="img/logo.svg" alt="Main logo">
-                    </div>
-                </a>
-                <div class="aside-top-menu">
-                    <div id="home">
-                        <a href="#">
-                            <img src="img/home.svg" alt="Home">
-                            <span> Home</span>
-                        </a>
-                    </div>
-                    <div id="cerca">
-                        <a href="#">
-                            <img src="img/search.svg" alt="Cerca">
-                            <span> Cerca</span>
-                        </a>
-                    </div>
-                    <div id="libreria">
-                        <a href="#">
-                            <img src="img/libreria.svg" alt="Libreria">
-                            <span> La tua libreria</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="aside-playlist">
-                    <h4>PLAYLIST</h4>
-                    <div class="crea-playlist">
-                        <button>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                        <a href="#">Crea Playlist</a>
-                    </div>
-                    <ul>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                    </ul>
-                </div>
-                <div class="aside-profile">
-                    <a href="#">
-                        <i class="fa-regular fa-circle-down"></i>
-                        Installa App
-                    </a>
-                    <div class="user-profile">
-                        <div class="profile-image">
-                            <img src="img/profile.svg" alt="Immagine del profilo">
-                        </div>
-                        <h5>John Doe</h5>
-                    </div>
-                </div>
-            </aside>
-            <main>
-                <nav class="nav-top">
-                    <div id="upgrade">
-                        <button>
-                            <h5>Effettua l'upgrade</h5>
-                        </button>
-                    </div>
-                </nav>
-                <div class="main-content">
-                    <!-- sezione menu di navigazione main -->
-                    <div class="main-menu">
-                        <ul>
-                            <li>
-                                <a href="#">In Evidenza
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Podcast
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Classifiche
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Generi e mood
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Nuove uscite
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Scopri
-                                    <div class="layhover-border"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /sezione menu di navigazione main -->
+      <div class="wrapper-content">
+        <!-- barra laterale -->
+        <aside>
+          <a href="#" class="logo">
+            <div id="logo">
+              <img src="img/logo.svg" alt="Main logo" />
+            </div>
+          </a>
+          <div class="aside-top-menu">
+            <div id="home">
+              <a href="#">
+                <img src="img/home.svg" alt="Home" />
+                <span> Home</span>
+              </a>
+            </div>
+            <div id="cerca">
+              <a href="#">
+                <img src="img/search.svg" alt="Cerca" />
+                <span> Cerca</span>
+              </a>
+            </div>
+            <div id="libreria">
+              <a href="#">
+                <img src="img/libreria.svg" alt="Libreria" />
+                <span> La tua libreria</span>
+              </a>
+            </div>
+          </div>
+          <div class="aside-playlist">
+            <h4>PLAYLIST</h4>
+            <div class="crea-playlist">
+              <button>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <a href="#">Crea Playlist</a>
+            </div>
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+          <div class="aside-profile">
+            <a href="#">
+              <i class="fa-regular fa-circle-down"></i>
+              Installa App
+            </a>
+            <div class="user-profile">
+              <div class="profile-image">
+                <a href="#"
+                  ><img src="img/profile.svg" alt="Immagine del profilo"
+                /></a>
+              </div>
+              <h4><a href="#">John Doe</a></h4>
+            </div>
+          </div>
+        </aside>
+        <!-- /barra laterale -->
+        <!-- contenuto centrale -->
+        <main>
+          <nav class="nav-top">
+            <div id="upgrade">
+              <button>
+                <h5>Effettua l'upgrade</h5>
+              </button>
+            </div>
+          </nav>
+          <div class="main-content">
+            <!-- sezione menu di navigazione main -->
+            <div class="main-menu">
+              <ul>
+                <li>
+                  <a href="#"
+                    >In Evidenza
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Podcast
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Classifiche
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Generi e mood
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Nuove uscite
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Scopri
+                    <div class="layhover-border"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /sezione menu di navigazione main -->
 
-                    <!-- prima sezione main (Ascoltati di recente) -->
-                    <section id="recently-played" class="clearfix">
-                        <h1>Recently Played</h1>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/metal_lifting.jpg" alt="Album Heavy Metal">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Heavy Metal</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Subtitle
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/stranger.jpeg" alt="Album Stranger Things">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Stranger Things, Vol.1 (a Netflix Original Soundtrack)</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Kyle Dixon & Michael Stein
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/aquietplace.jpeg" alt="Album A Quite Place">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>A quiet place</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Subtitle
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/split.jpeg" alt="Album Split">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Split</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Subtitle
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/cure.jpeg" alt="Album A Cure for Wellness">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>A cure for wellness</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Subtitle
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/sinister.jpeg" alt="Album Sinister">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Sinister</h4>
-                                </div>
-                                <div class="media-subtitle">
-                                    Subtitle
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- /prima sezione main -->
-
-                    <!-- seconda sezione main (Creato per...) -->
-                    <section id="created-for" class="clearfix">
-                        <h1>Creato per John Doe</h1>
-                        <div class="media-subtitle">
-                            Più ascolti, più accurati saranno i suggerimenti.
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/radar.jpeg" alt="Release Radar">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Release Radar</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/mixdaily.jpeg" alt="Album Stranger Things">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Daily Mix 1</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- /seconda sezione main -->
-
-                    <!-- terza sezione main (Artisti più popolari) -->
-                    <section id="popular-artist" class="clearfix">
-                        <h1>Artisti più popolari</h1>
-                        <div class="media-subtitle">
-                            Più ascolti, più accurati saranno i suggerimenti.
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/youg.jpeg" alt="Release Radar">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Lana del Rey</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-img">
-                                <img src="img/einaudi.jpeg" alt="Album Stranger Things">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="media-text">
-                                <div class="media-title">
-                                    <h4>Ludovico Einaudi</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- /terza sezione main -->
+            <!-- prima sezione main (Ascoltati di recente) -->
+            <section id="recently-played" class="clearfix">
+              <h1>Recently Played</h1>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/metal_lifting.jpg" alt="Album Heavy Metal" />
+                  <i class="fa-regular fa-circle-play"></i>
                 </div>
-            </main>
-        </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Heavy Metal</h4>
+                  </div>
+                  <div class="media-subtitle">Subtitle</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/stranger.jpeg" alt="Album Stranger Things" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>
+                      Stranger Things, Vol.1 (a Netflix Original Soundtrack)
+                    </h4>
+                  </div>
+                  <div class="media-subtitle">Kyle Dixon & Michael Stein</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/aquietplace.jpeg" alt="Album A Quite Place" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>A quiet place</h4>
+                  </div>
+                  <div class="media-subtitle">Subtitle</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/split.jpeg" alt="Album Split" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Split</h4>
+                  </div>
+                  <div class="media-subtitle">Subtitle</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/cure.jpeg" alt="Album A Cure for Wellness" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>A cure for wellness</h4>
+                  </div>
+                  <div class="media-subtitle">Subtitle</div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/sinister.jpeg" alt="Album Sinister" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Sinister</h4>
+                  </div>
+                  <div class="media-subtitle">Subtitle</div>
+                </div>
+              </div>
+            </section>
+            <!-- /prima sezione main -->
+
+            <!-- seconda sezione main (Creato per...) -->
+            <section id="created-for" class="clearfix">
+              <h1>Creato per John Doe</h1>
+              <div class="media-subtitle">
+                Più ascolti, più accurati saranno i suggerimenti.
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/radar.jpeg" alt="Release Radar" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Release Radar</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/mixdaily.jpeg" alt="Album Stranger Things" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Daily Mix 1</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /seconda sezione main -->
+
+            <!-- terza sezione main (Artisti più popolari) -->
+            <section id="popular-artist" class="clearfix">
+              <h1>Artisti più popolari</h1>
+              <div class="media-subtitle">
+                Più ascolti, più accurati saranno i suggerimenti.
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/youg.jpeg" alt="Release Radar" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Lana del Rey</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-img">
+                  <img src="img/einaudi.jpeg" alt="Album Stranger Things" />
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <div class="media-text">
+                  <div class="media-title">
+                    <h4>Ludovico Einaudi</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /terza sezione main -->
+          </div>
+        </main>
+        <!-- /contenuto centrale -->
+      </div>
     </div>
+    <!-- footer -->
     <footer>
-        <div class="player-bar">
-
+      <div class="player-bar">
+        <div class="left-bar">
+          <div class="riproduzione">
+            <div class="album-img">
+              <a href="#"
+                ><img src="img/sinister.jpeg" alt="Album Sinister"
+              /></a>
+            </div>
+            <span>
+              <h3>Sinister</h3>
+              <a href="#">Brano Nome</a>
+            </span>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-regular fa-folder"></i></a>
+          </div>
         </div>
+        <div class="central-bar">
+          <div class="menu-riproduzione-media">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+              </li>
+              <li>
+                <a href="#" id="bigger-icon"
+                  ><i class="fa-regular fa-circle-play"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="barra-avanzamento-media">
+            <div class="start-time">0:25</div>
+            <a href="#">
+              <div class="progress-bar">
+                <div class="running-bar"></div>
+                <div class="hidden-running-bar">
+                  <div class="white-circle"></div>
+                </div>
+              </div>
+            </a>
+            <div class="end-time">4:35</div>
+          </div>
+        </div>
+        <div class="right-bar">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+            </li>
+          </ul>
+          <a href="#">
+            <div class="progress-bar">
+              <div class="running-bar"></div>
+              <div class="hidden-running-bar">
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <!-- /footer -->
+  </body>
 </html>
