@@ -35,7 +35,7 @@ a {
 li {
   list-style: none;
 }
-.clearfix {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -244,7 +244,7 @@ aside a:hover img {
   overflow-y: auto;
 }
 .aside-playlist h4,
-.crea-playlist{
+.crea-playlist {
   padding: 0 20px;
 }
 .crea-playlist {
@@ -275,7 +275,7 @@ aside a:hover img {
 .aside-profile a {
   font-size: 12px;
 }
-.aside-playlist ul li:hover{
+.aside-playlist ul li:hover {
   border-left: 3px solid yellowgreen;
 }
 .aside-profile {
@@ -352,7 +352,7 @@ h4 > a {
 .hidden-top-aside > .hidden-logo:hover {
   filter: none;
 }
-.hidden-bottom-aside > .hidden-arrow > a:hover{
+.hidden-bottom-aside > .hidden-arrow > a:hover {
   color: white;
 }
 .hidden-arrow {
@@ -422,7 +422,6 @@ footer a:hover {
 }
 .riproduzione {
   height: 90px;
-  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -432,6 +431,11 @@ footer a:hover {
   margin-left: 15px;
   height: 50px;
   width: 50px;
+}
+.album-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .album-img img {
   width: 100%;
@@ -444,6 +448,9 @@ footer a:hover {
 }
 .riproduzione > span > a {
   font-size: 10px;
+}
+#artist {
+  color: white;
 }
 .icons {
   width: 50px;
@@ -467,8 +474,8 @@ footer a:hover {
   font-size: 18px;
   vertical-align: middle;
 }
-.fa-shuffle:hover{
-  color: rgb(29,185,84);
+.menu-riproduzione-media > ul > li > a:hover {
+  color: rgb(29, 185, 84);
 }
 #bigger-icon {
   font-size: 36px;
@@ -535,7 +542,6 @@ footer a:hover {
 .right-bar {
   align-items: center;
   justify-content: end;
-  padding-right: 5px;
 }
 .right-bar > a {
   display: block;
@@ -592,9 +598,6 @@ footer a:hover {
   #upgrade {
     right: 70px;
   }
-  .left-bar {
-    display: block;
-  }
   .riproduzione {
     height: 100%;
     width: 45%;
@@ -606,19 +609,44 @@ footer a:hover {
     width: 100%;
   }
   .album-img {
-    margin: 5px auto;
+    margin: 3px auto;
     height: 40px;
     width: 40px;
   }
   .left-bar .icons {
-    height: 100%;
-    width: 45%;
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
+    text-align: end;
+    margin-top: 30px;
   }
   .left-bar .icons > a {
     display: block;
+  }
+  .right-bar .progress-bar{
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 320px){
+  #first-album,
+  #second-album {
+    height: 80vw;
+  }
+  #third-album,
+  #fourth-album{
+    height: 50vw;
+  }   
+}
+@media screen and (min-width: 1750px){
+  footer .left-bar,
+  footer .right-bar{
+    width: 20%;    
+  }
+  footer .central-bar{
+    width: 60%;
+  }
+  .left-bar .riproduzione{
+    display: flex;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-height: 500px) {
