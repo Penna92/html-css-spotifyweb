@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Spotify - La tua libreria</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <!-- barra laterale -->
+            <aside>
+                <a href="#" class="logo">
+                    <div id="logo">
+                        <img src="img/logo.svg" alt="Main logo" />
+                    </div>
+                </a>
+                <div class="aside-top-menu">
+                    <div id="home">
+                        <a href="index.html" target="_blank">
+                            <img src="img/home.svg" alt="Home" />
+                            <span> Home</span>
+                        </a>
+                    </div>
+                    <div id="cerca">
+                        <a href="#">
+                            <img src="img/search.svg" alt="Cerca" />
+                            <span> Cerca</span>
+                        </a>
+                    </div>
+                    <div id="libreria">
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="Libreria" />
+                            <span> La tua libreria</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-playlist">
+                    <h4>PLAYLIST</h4>
+                    <div class="crea-playlist">
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <a href="#">Crea Playlist</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Black Metal</a></li>
+                        <li><a href="#">Relaxing & Studying music</a></li>
+                        <li><a href="#">Medieval music</a></li>
+                        <li><a href="#">Hard Rock</a></li>
+                        <li><a href="#">Folk Metal</a></li>
+                        <li><a href="#">Montelago Celtic Festival</a></li>
+                        <li><a href="#">Trash 2021</a></li>
+                    </ul>
+                </div>
+                <div class="aside-profile">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-down"></i>
+                        Installa App
+                    </a>
+                    <div class="user-profile">
+                        <div class="profile-image">
+                            <a href="#"><img src="img/profile.svg" alt="Immagine del profilo" /></a>
+                        </div>
+                        <h4><a href="#">John Doe</a></h4>
+                    </div>
+                </div>
+            </aside>
+            <!-- /barra laterale -->
+
+            <!-- barra laterale per mobile -->
+            <div class="hidden-aside">
+                <div class="hidden-top-aside">
+                    <a href="#" class="hidden-logo">
+                        <div id="hidden-logo">
+                            <img src="img/logo-small.svg" alt="Main logo" />
+                        </div>
+                    </a>
+                    <div id="hidden-home">
+                        <a href="#">
+                            <img src="img/home.svg" alt="Home" />
+                        </a>
+                    </div>
+                    <div id="hidden-cerca">
+                        <a href="#">
+                            <img src="img/search.svg" alt="Cerca" />
+                        </a>
+                    </div>
+                    <div id="hidden-libreria">
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="Libreria" />
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden-bottom-aside">
+                    <div class="hidden-arrow">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                        </a>
+                    </div>
+                    <div class="hidden-profile-image">
+                        <a href="#"><img src="img/profile.svg" alt="Immagine del profilo" /></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /barra laterale per mobile -->
+            <!-- contenuto centrale -->
+            
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="player-bar">
+            <div class="left-bar">
+                <div class="riproduzione">
+                    <div class="album-img">
+                        <a href="#"><img src="img/folkstone.jpg" alt="Album Sinister" /></a>
+                    </div>
+                    <span>
+                        <h3><a href="#" id="artist">Folkstone</a></h3>
+                        <a href="#">Mercanti anonimi</a>
+                    </span>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+            <div class="central-bar">
+                <div class="menu-riproduzione-media">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" id="bigger-icon"><i class="fa-regular fa-circle-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="barra-avanzamento-media">
+                    <div class="start-time">0:25</div>
+                    <a href="#">
+                        <div class="progress-bar">
+                            <div class="running-bar"></div>
+                            <div class="hidden-running-bar">
+                                <div class="white-circle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="end-time">4:35</div>
+                </div>
+            </div>
+            <div class="right-bar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-desktop"></i>
+                            <div class="hidden-desktop">
+                                <div class="hidden-desktop-title">
+                                    <h2>Connetti <br> a un dispositivo</h2>
+                                </div>
+                                <div class="hidden-desktop-icon">
+                                    <i class="fa-solid fa-tv"></i>
+                                </div>
+                                <div class="hidden-desktop-text">
+                                    <span>
+                                        Riproduci e ascolta Spotify su tutti i dispositivi.
+                                        Avvia Spotify su un altro dispositivo e apparirà magicamente qui.
+                                    </span>
+                                </div>
+                                <div class="hidden-desktop-button">
+                                    <button>Ulteriori informazioni</button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <div class="progress-bar">
+                        <div class="running-bar"></div>
+                        <div class="hidden-running-bar">
+                            <div class="white-circle"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+
+</html>
