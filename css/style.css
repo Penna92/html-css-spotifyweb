@@ -686,6 +686,11 @@ footer a:hover {
     height: 50vw;
   }
 }
+@media screen and (max-width: 380px){
+  footer{
+    height: fit-content;
+  }
+}
 @media screen and (min-width: 1750px) {
   footer .left-bar,
   footer .right-bar {
