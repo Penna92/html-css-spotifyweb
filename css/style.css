@@ -157,18 +157,22 @@ main section {
   display: block;
   color: white;
   font-size: 48px;
-  display: none;
+  text-shadow: 2px 2px 4px #000000;
+  display: none;  
 }
 .media-img:hover i {
   display: block;
   z-index: 10000;
 }
+
 .media-img:hover img {
   opacity: 0.4;
 }
 .media-img img {
   width: 100%;
   object-fit: contain;
+  opacity: 1;
+  transition: 0.5s;
 }
 .media-title {
   margin-top: 1vw;
@@ -277,6 +281,10 @@ aside a:hover img {
 }
 .aside-playlist ul li:hover {
   border-left: 3px solid yellowgreen;
+  cursor: pointer;
+}
+.aside-playlist ul li:hover a{
+  color: white;
 }
 .aside-profile {
   position: fixed;
