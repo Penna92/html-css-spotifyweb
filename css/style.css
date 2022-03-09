@@ -193,9 +193,12 @@ aside {
   background-color: black;
   position: relative;
 }
+.aside-top-menu div {
+  margin-bottom: 10px;
+  padding: 0 20px 0 17px;
+  border-left: 3px solid black;
+}
 .logo,
-.aside-top-menu a,
-.aside-playlist,
 .aside-profile {
   padding: 0 20px;
 }
@@ -224,17 +227,14 @@ aside span {
   font-size: 14px;
   font-weight: bold;
 }
-.aside-top-menu div {
-  margin-bottom: 10px;
-}
 aside a:hover {
   color: white;
 }
 aside a:hover img {
   filter: invert(0);
 }
-.aside-top-menu div:active {
-  border-left: 2px solid greenyellow;
+.aside-top-menu div:hover {
+  border-left: 3px solid greenyellow;
 }
 .aside-playlist {
   margin: 30px 0 10px 0;
@@ -242,6 +242,10 @@ aside a:hover img {
   height: 50%;
   flex-direction: column;
   overflow-y: auto;
+}
+.aside-playlist h4,
+.crea-playlist{
+  padding: 0 20px;
 }
 .crea-playlist {
   margin: 20px 0 10px 0;
@@ -264,10 +268,15 @@ aside a:hover img {
 }
 .aside-playlist ul li {
   margin: 10px 0;
+  padding: 0 20px 0 17px;
+  border-left: 3px solid black;
 }
 .aside-playlist ul li a,
 .aside-profile a {
   font-size: 12px;
+}
+.aside-playlist ul li:hover{
+  border-left: 3px solid yellowgreen;
 }
 .aside-profile {
   position: fixed;
@@ -335,7 +344,16 @@ h4 > a {
 .hidden-top-aside > #hidden-libreria > a img,
 .hidden-top-aside > #hidden-cerca > a img,
 .hidden-top-aside > .hidden-logo {
-  filter: invert(0.3);
+  filter: invert(0.5);
+}
+.hidden-top-aside > #hidden-home > a:hover img,
+.hidden-top-aside > #hidden-libreria > a:hover img,
+.hidden-top-aside > #hidden-cerca > a:hover img,
+.hidden-top-aside > .hidden-logo:hover {
+  filter: none;
+}
+.hidden-bottom-aside > .hidden-arrow > a:hover{
+  color: white;
 }
 .hidden-arrow {
   width: 30px;
@@ -448,6 +466,9 @@ footer a:hover {
   color: white;
   font-size: 18px;
   vertical-align: middle;
+}
+.fa-shuffle:hover{
+  color: rgb(29,185,84);
 }
 #bigger-icon {
   font-size: 36px;
