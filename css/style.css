@@ -689,6 +689,43 @@ footer a:hover {
 .box5 {
   animation-name: quiet;
 }
+.card-img > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(29, 185, 84);
+  font-size: 36px;
+  text-shadow: 2px 2px 4px #000000;
+  animation: myfirst 0.3s linear;
+  display: none;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.card-img > i:active {
+  visibility: hidden;
+}
+.card-img > i:active + .sound-wave {
+  display: flex;
+}
+.card:hover i {
+  display: block;
+  z-index: 10000;
+}
+@keyframes myfirst {
+  0% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 0.2;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 /* ----/SOUND EFFECT---- */
 
 /* --------- LIBRERIA.HTML ---------- */
@@ -715,7 +752,7 @@ section#playlist h1 {
 }
 .card {
   width: calc(100% / 7);
-  min-width: 120px;
+  min-width: 140px;
   margin: 10px 0;
   background-color: rgb(24, 24, 24);
   border-radius: 5px;
@@ -731,14 +768,19 @@ section#playlist h1 {
   background-color: rgba(105, 105, 105, 0.3);
 }
 .card-img {
-  width: 115px;
-  height: 115px;
+  height: 120px;
+  width: 120px;
+  margin: 0 10px;
+  overflow: hidden;
   border-radius: 5px;
   overflow: hidden;
+  position: relative;
 }
 .card-img img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
   object-fit: cover;
 }
 .card-title h4 {
@@ -755,7 +797,7 @@ section#playlist h1 {
 /* ----LIBRERIA BOTTOM-MAIN---- */
 #bottom-main {
   width: 100%;
-  min-width: 870px;
+  min-width: 750px;
   height: 100%;
   margin-top: 50px;
   margin-bottom: 0;
@@ -797,8 +839,7 @@ section#playlist h1 {
 }
 .top-lists {
   display: flex;
-  justify-content: flex-start;
-  gap: 30px;
+  justify-content: space-between;
 }
 .bottom-lists > ul {
   display: flex;
