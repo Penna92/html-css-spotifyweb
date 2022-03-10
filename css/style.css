@@ -734,7 +734,7 @@ footer a:hover {
 /* ----LIBRERIA MAIN---- */
 #library-main {
   /* background-color: rgb(18, 18, 18); */
-  animation: color-change 10s linear infinite alternate;
+  animation: color-change 12s linear infinite alternate both;
 }
 @keyframes color-change {
   0% {
@@ -750,7 +750,7 @@ footer a:hover {
     background: rgb(16, 52, 19);
   }
   80% {
-    background: black;
+    background: rgb(18, 18, 18);
   }
   100% {
     background: rgb(105, 39, 145);
