@@ -154,17 +154,24 @@ main section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: block;
   color: white;
   font-size: 48px;
   text-shadow: 2px 2px 4px #000000;
   display: none;
 }
+.media-img > i:hover {
+  color: rgb(29, 185, 84);
+}
+.media-img > i:active {
+  visibility: hidden;
+}
+.media-img > i:active + .sound-wave {
+  display: flex;
+}
 .media-img:hover i {
   display: block;
   z-index: 10000;
 }
-
 .media-img:hover img {
   opacity: 0.4;
 }
@@ -610,33 +617,107 @@ footer a:hover {
 }
 /* ----/FOOTER---- */
 
+/* ---- SOUND EFFECT ---- */
+@keyframes quiet {
+  25% {
+    transform: scaleY(0.6);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.8);
+  }
+}
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.6);
+  }
+}
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+.sound-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  --boxSize: 8px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+  display: none;
+}
+.box {
+  transform: scaleY(0.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: rgb(29, 185, 84);
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+.box1 {
+  animation-name: quiet;
+}
+.box2 {
+  animation-name: normal;
+}
+.box3 {
+  animation-name: quiet;
+}
+.box4 {
+  animation-name: loud;
+}
+.box5 {
+  animation-name: quiet;
+}
+/* ----/SOUND EFFECT---- */
+
 /* --------- LIBRERIA.HTML ---------- */
 
 /* ----LIBRERIA MAIN---- */
-#library-main{
-  background-color: rgb(18,18,18);
+#library-main {
+  background-color: rgb(18, 18, 18);
 }
-section#playlist{
+section#playlist {
   margin-top: 30px;
   width: 100%;
-  background-color: rgb(18,18,18);
+  background-color: rgb(18, 18, 18);
   text-align: center;
 }
-section#playlist h1{
+section#playlist h1 {
   margin-bottom: 30px;
 }
-.playlist-cards{
-  width:100%;
+.playlist-cards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   gap: 20px;
 }
-.card{
+.card {
   width: calc(100% / 7);
   min-width: 120px;
   margin: 10px 0;
-  background-color: rgb(24,24,24);
+  background-color: rgb(24, 24, 24);
   border-radius: 5px;
   padding: 15px;
   display: flex;
@@ -646,25 +727,25 @@ section#playlist h1{
   transition: 0.5s;
   cursor: pointer;
 }
-.card:hover{
+.card:hover {
   background-color: rgba(105, 105, 105, 0.3);
 }
-.card-img{
+.card-img {
   width: 115px;
   height: 115px;
   border-radius: 5px;
   overflow: hidden;
 }
-.card-img img{
+.card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card-title h4{
+.card-title h4 {
   font-size: 14px;
   margin: 15px 0;
 }
-.card-subtitle{
+.card-subtitle {
   font-size: 12px;
   font-weight: bold;
   color: rgb(116, 119, 123);
@@ -672,7 +753,7 @@ section#playlist h1{
 /* ----/LIBRERIA MAIN---- */
 
 /* ----LIBRERIA BOTTOM-MAIN---- */
-#bottom-main{
+#bottom-main {
   width: 100%;
   min-width: 870px;
   height: 100%;
@@ -681,7 +762,7 @@ section#playlist h1{
   background-color: #000000;
   display: flex;
 }
-.useful-links{
+.useful-links {
   width: 60%;
   height: 100%;
   display: flex;
@@ -689,7 +770,7 @@ section#playlist h1{
   justify-content: space-between;
   padding: 40px 0;
 }
-.social{
+.social {
   width: 40%;
   height: 100%;
   display: flex;
@@ -698,49 +779,49 @@ section#playlist h1{
   align-items: flex-end;
   padding: 40px 0;
 }
-.top-lists>ul{
+.top-lists > ul {
   width: 20%;
 }
-.top-lists>ul>li{
-  margin-bottom: 20px;  
+.top-lists > ul > li {
+  margin-bottom: 20px;
 }
-.top-lists>ul>li:first-child{
+.top-lists > ul > li:first-child {
   font-size: 18px;
   font-weight: bold;
   color: rgb(116, 119, 123);
 }
-.top-lists>ul>li>a{
+.top-lists > ul > li > a {
   color: white;
   font-size: 14px;
   font-weight: normal;
 }
-.top-lists{
+.top-lists {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
 }
-.bottom-lists>ul{
+.bottom-lists > ul {
   display: flex;
   justify-content: space-between;
 }
-.bottom-lists>ul>li{
+.bottom-lists > ul > li {
   display: inline-block;
 }
-.bottom-lists>ul>li>a{
-  color:rgb(116, 119, 123);
+.bottom-lists > ul > li > a {
+  color: rgb(116, 119, 123);
   font-weight: normal;
   font-size: 12px;
 }
-.social-icons>div{
+.social-icons > div {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgb(34,35,38);
+  background-color: rgb(34, 35, 38);
   display: inline-block;
   position: relative;
   margin-left: 10px;
 }
-.social-icons>div>a>i{
+.social-icons > div > a > i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -748,12 +829,12 @@ section#playlist h1{
   font-size: 30px;
   color: white;
 }
-.copyright>span{
+.copyright > span {
   color: rgb(116, 119, 123);
 }
 #bottom-main a:hover,
-.social-icons>div>a>i:hover{
-  color: rgb(30,189,54);
+.social-icons > div > a > i:hover {
+  color: rgb(30, 189, 54);
 }
 /* ----/LIBRERIA BOTTOM-MAIN---- */
 
@@ -834,8 +915,8 @@ section#playlist h1{
     height: 50vw;
   }
 }
-@media screen and (max-width: 380px){
-  footer{
+@media screen and (max-width: 380px) {
+  footer {
     height: fit-content;
   }
 }
